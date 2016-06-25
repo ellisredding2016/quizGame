@@ -1,0 +1,79 @@
+/* Images
+Question 1:
+Before- Car: https://unsplash.com/photos/Bkci_8qcdvQ
+After - http://static1.businessinsider.com/image/52af4b48ecad04934a6ee2d9-1200-667/screen%20shot%202013-12-16%20at%201.49.00%20pm.png
+Question - The average US driver drives 11,400 miles a year at 21.6 mpg,  How many tons of CO2 does this create?
+Answer -  4.7 85 4,800
+
+Question 2:
+Before- https://unsplash.com/photos/iOWEyl7sEgY
+After - https://www3.epa.gov/climatechange/images/ghgemissions/GHGEmissionsHomeBusiness.png
+[Need Header - Graph Title - Residential and Commercial Emissions]
+Question - How many tons of CO2 does the average american household emit a year? 
+Answers - .25 12 100,000 
+
+Question 3:
+Before- Mountains and Trees: https://unsplash.com/photos/Bkci_8qcdvQ
+After - https://www3.epa.gov/climatechange/images/ghgemissions/USCO2EmissionsTimeSeries.png
+Question - The US total emissions of CO2 are:
+Answers - increasing decreasing or staying the same?
+
+Question 4:
+Before- https://unsplash.com/photos/iOWEyl7sEgY
+After - US per capita: http://i.dailymail.co.uk/i/pix/2014/09/22/article-2764323-21929A6000000578-253_634x413.jpg
+Question - On a per person basis, how much more does the US emit than the world average?
+Answers - 15% 85% 325% 
+
+Question 5:
+Before-Ocean: https://unsplash.com/photos/UklXbPE-Hos
+After - https://unsplash.com/photos/AQ8jQo7QULU
+Questions - Increasing the global temperature by 2C will eventually result in 5 meters of sea rise.  How many people globally live within 5 meters of sea level?
+Answers - The population of California: 40 million  The population of Brazil 200 million  The population of North America 500 million;
+ 
+ 
+ 
+ CO2: http://www.pennenergy.com/content/dam/Pennenergy/online-articles/2014/10/co2-emissions.jpg
+*/
+
+ #leftSpace{
+ 	background-image: url("../images/stack.jpg");
+	background-repeat: no-repeat;
+	
+	background-size:100% 100%;
+	
+	height: 1000px;
+ }
+
+ #centerSpace{
+	background-image: url("../images/question1.1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height:1000px;
+
+
+ }
+
+h1 {
+	text-align: center;
+	font-size: 5rem;
+}
+
+ #rightSpace{
+ 	background-color: cornflowerblue;
+ 	height:1000px;
+ }
+
+ #question1, #question2, #question3, #question4, #question5{
+ 	font-size:10rem;
+ 	padding: 2rem;	
+ 	
+ }
+
+ #question1{
+ 	padding-top:10rem;
+ }
+
+ .list-group{
+ 	text-align: center;
+
+ }
