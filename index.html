@@ -2,43 +2,65 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>CO2 Quiz</title>
-	
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<title>CO2 Quiz</title>	
 	<link rel="stylesheet" href="css/style.css">
-	<script src="//code.jquery.com/jquery.min.js"></script>
-	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+
+	<script src="//code.jquery.com/jquery.min.js"></script>	
 	<script src="js/app.js"></script>
 </head>
 
 <body>
-	<div  id="leftSpace" class="col-sm-2"> </div>
-	<div id="centerSpace" class="col-sm-7" overflow="hidden"> 
-		
-		<h1><span class="label label-success" >U.S. Emissions Quiz!<span></h1>  
-	</div>
 	
-	<div id="rightSpace" class="col-sm-3" >
-		<div class="list-group">
-			<div>
-				<span id="question1" class="glyphicon glyphicon-question-sign"></span>
-			</div>		
-			<div><span id="question2" class="glyphicon glyphicon-question-sign"></span></div>
-			<div><span id="question3" class="glyphicon glyphicon-question-sign"></span></div>
-			<div><span id="question4" class="glyphicon glyphicon-question-sign"></span></div>
-			<div><span id="question5" class="glyphicon glyphicon-question-sign"></span></div>
+	<div id="centerSpace"> 
+		<h1><span class="label label-success">Our Role- Quiz<span></h1>  
+		<div id="pageBody">
+			<div id="questionSpace">
+				<div id="questionText">
+					
+				</div>
+				<div id="answerDiv">
+					<h2 id="question"><h2>
+					<div id="answerList">
+						<form>
+							<span id = "answer1"></span> <input id = "0" type="radio" name="quiz" class="styled"><br>
+							<span id = "answer2"></span> <input id = "1" type="radio" name="quiz" class="styled"><br>
+							<span id = "answer3"></span> <input id = "2" type="radio" name="quiz" class="styled"><br><br><br>
+							<input type="submit" id="submit" name="quiz" value="Submit">
+							<input type="button" id="retry" value="Try Again" class="hidden">
+						</form>
+					</div>
+				</div>				
+			</div>
+
+			<div id="statusBar" >
+				<div class="list-group">
+					<div><span id="question1" class="fa fa-question-circle"></span></div>
+					<div><span id="question2" class="fa fa-question-circle"></span></div>
+					<div><span id="question3" class="fa fa-question-circle"></span></div>
+					<div><span id="question4" class="fa fa-question-circle"></span></div>
+					<div><span id="question5" class="fa fa-question-circle"></span></div>
+				</div>
+			</div>
 		</div>
 	</div>
+	
+	
 
 
 </body>
 </html>
-
-<!--
-
+   <!--                                                                                
 	<img id="centerImage" src="./images/question2.1.jpg" alt = "Old Car2" height="1000px" z-index="-1">
 
 <span class="glyphicons glyphicons-question-sign"></span>
 <span class="glyphicons glyphicons-ok-sign"></span>
 <span class="glyphicons glyphicons-remove-sign"></span>
+ fa-check-circle [&#xf058;]
+ fa-circle-o [&#xf10c;]
+ fa-dot-circle-o [&#xf192;]
+ fa-question-circle [&#xf059;]
+ fa-times-circle [&#xf057;]
+
 	-->
