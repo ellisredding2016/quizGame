@@ -2,6 +2,9 @@
 	font-family: 'PT Sans', sans-serif;
 } 
 
+body{ background-color: midnightblue; }
+
+
  #centerSpace{
 	background-image: url("../images/Question1.1.jpg");
 	background-repeat: no-repeat;
