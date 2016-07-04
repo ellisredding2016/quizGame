@@ -69,6 +69,8 @@ $(document).ready(function(){
 		 	$("#question"+ (gCurrentQuestion+1)).addClass("fa fa-times-circle incorrect");
 		 }
 	}
+
+
 /* -------------- Initial Page Setup -------------*/
 	updateQuestion();
 
@@ -79,11 +81,14 @@ $(document).ready(function(){
 
 	$("#answerList").submit(function(e) {
 		e.preventDefault();
-		updateStatus();
-		gCurrentQuestion++;
-		$("input[type='radio']:checked").prop("checked",false);
-		if(gCurrentQuestion < 5) {updateQuestion();}
-		else { provideResults();}
+		if ($('input[name=quiz]:checked').length > 0){
+			updateStatus();
+			gCurrentQuestion++;
+			$("input[type='radio']:checked").prop("checked",false);
+			if(gCurrentQuestion < 5) {updateQuestion();}
+			else { provideResults();}
+			}
+		else { alert("Please Choose An Answer"); }
 	});
 
 /* 		Reset variables, Reset Status Checks, Reset Quiz to Question 1 */
@@ -99,7 +104,10 @@ $(document).ready(function(){
 		for (var i =0; i<3;i++){
 			$("#"+i).removeClass("hidden");
 		}
+
 		updateQuestion();
+		$("#submit").removeClass("hidden");
+		$("#retry").addClass("hidden");
 	});
 	
 
